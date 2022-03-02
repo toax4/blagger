@@ -1,7 +1,11 @@
-import 'package:blagger/data/bindings/base_bindings.dart';
+// 📦 Package imports:
 import 'package:get/get.dart';
-// Pages
+
+// 🌎 Project imports:
+import 'package:blagger/data/bindings/base_bindings.dart';
 import 'package:blagger/views/screens/home_page.dart';
+
+// Pages
 
 part './app_routes.dart';
 

@@ -1,7 +1,12 @@
-import 'package:blagger/core/app_storages.dart';
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+
+// 📦 Package imports:
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+
+// 🌎 Project imports:
+import 'package:blagger/core/app_storages.dart';
 
 class AppService {
   GetStorage appStorage = GetStorage(AppStorages.app);
