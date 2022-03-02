@@ -1,0 +1,35 @@
+reload:
+  - fvm flutter clean 
+  - fvm flutter pub get
+
+adb_connect:
+  - adb tcpip 5555 && adb connect 
+
+import_sort:
+  - fvm flutter pub run import_sorter:main
+
+launcher_icon:
+  - fvm flutter pub run flutter_launcher_icons:main
+
+setup:
+  - fvm flutter pub add nil
+  - fvm flutter pub add intl
+  - fvm flutter pub add device_info_plus
+  - fvm flutter pub add font_awesome_flutter
+  - fvm flutter pub add sizer
+  - fvm flutter pub add flutter_dotenv
+
+setup_dev:
+  - fvm flutter pub add flutter_lints
+  - fvm flutter pub add import_sorter
+  - fvm flutter pub add flutter_launcher_icons
+  - fvm flutter pub add logger
+
+setup_get:
+  - fvm flutter pub add get
+  - fvm flutter pub add get_storage
+
+build:
+  - derry reload
+  - derry launcher_icon
+  - derry import_sort
